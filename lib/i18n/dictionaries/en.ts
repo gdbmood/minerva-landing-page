@@ -28,6 +28,7 @@ export const en: Dictionary = {
     ctaPrimary: 'Explore platform',
     ctaSecondary: 'View plans',
     ctaHowTo: 'How to sign up',
+    sponsorsLabel: 'Our sponsors',
   },
 
   cards: {

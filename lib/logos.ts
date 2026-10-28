@@ -33,6 +33,9 @@ export const LOGOS = {
   },
 } as const satisfies Record<string, CompanyLogoAsset>;
 
+/** Sponsors pinned in the hero, in display order. Add an id here to show another one. */
+export const SPONSORS: readonly LogoId[] = ['deltaMotors'];
+
 export interface CompanyLogoAsset {
   name: string;
   src: string;

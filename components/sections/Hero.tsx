@@ -2,7 +2,9 @@
 
 import { Container } from '@/components/ui/Container';
 import { ArrowRightIcon } from '@/components/ui/icons';
+import { CompanyLogo } from '@/components/ui/CompanyLogo';
 import { GUIDE_SLUG } from '@/lib/guide';
+import { SPONSORS } from '@/lib/logos';
 import { useI18n } from '@/lib/i18n/client';
 
 /**
@@ -50,6 +52,14 @@ export function Hero() {
                 <ArrowRightIcon size={14} className="transition-transform group-hover:translate-x-1" />
               </a>
             </div>
+            {SPONSORS.length > 0 && (
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
+                <span className="text-xs font-medium uppercase tracking-[0.08em] text-fg-subtle">{t.sponsorsLabel}</span>
+                {SPONSORS.map((id) => (
+                  <CompanyLogo key={id} id={id} className="h-12 w-40" sizes="160px" />
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </Container>

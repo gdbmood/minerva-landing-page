@@ -210,6 +210,7 @@ export interface Dictionary {
     ctaSecondary: string;
     /** Link to the "How to sign up" guide (/[lang]/come-iscriversi). */
     ctaHowTo: string;
+    sponsorsLabel: string;
   };
   cards: {
     supplier: { title: string; description: string; chips: string[]; axisY: string; axisX: string };
